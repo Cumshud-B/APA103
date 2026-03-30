@@ -1,0 +1,15 @@
+C:\Users\Classtime.PC_3_506_16\Desktop\APA103\05-AbstractClassPolymorphismForEach\obj\Debug\net8.0\05-AbstractClassPolymorphismForEach.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Classtime.PC_3_506_16\Desktop\APA103\05-AbstractClassPolymorphismForEach\obj\Debug\net8.0\05-AbstractClassPolymorphismForEach.AssemblyInfoInputs.cache
+C:\Users\Classtime.PC_3_506_16\Desktop\APA103\05-AbstractClassPolymorphismForEach\obj\Debug\net8.0\05-AbstractClassPolymorphismForEach.AssemblyInfo.cs
+C:\Users\Classtime.PC_3_506_16\Desktop\APA103\05-AbstractClassPolymorphismForEach\obj\Debug\net8.0\05-AbstractClassPolymorphismForEach.csproj.CoreCompileInputs.cache
+C:\Users\Classtime.PC_3_506_16\Desktop\APA103\05-AbstractClassPolymorphismForEach\obj\Debug\net8.0\05-AbstractClassPolymorphismForEach.sourcelink.json
+C:\Users\Classtime.PC_3_506_16\Desktop\APA103\05-AbstractClassPolymorphismForEach\bin\Debug\net8.0\05-AbstractClassPolymorphismForEach.exe
+C:\Users\Classtime.PC_3_506_16\Desktop\APA103\05-AbstractClassPolymorphismForEach\bin\Debug\net8.0\05-AbstractClassPolymorphismForEach.deps.json
+C:\Users\Classtime.PC_3_506_16\Desktop\APA103\05-AbstractClassPolymorphismForEach\bin\Debug\net8.0\05-AbstractClassPolymorphismForEach.runtimeconfig.json
+C:\Users\Classtime.PC_3_506_16\Desktop\APA103\05-AbstractClassPolymorphismForEach\bin\Debug\net8.0\05-AbstractClassPolymorphismForEach.dll
+C:\Users\Classtime.PC_3_506_16\Desktop\APA103\05-AbstractClassPolymorphismForEach\bin\Debug\net8.0\05-AbstractClassPolymorphismForEach.pdb
+C:\Users\Classtime.PC_3_506_16\Desktop\APA103\05-AbstractClassPolymorphismForEach\obj\Debug\net8.0\05-AbstractClassPolymorphismForEach.dll
+C:\Users\Classtime.PC_3_506_16\Desktop\APA103\05-AbstractClassPolymorphismForEach\obj\Debug\net8.0\refint\05-AbstractClassPolymorphismForEach.dll
+C:\Users\Classtime.PC_3_506_16\Desktop\APA103\05-AbstractClassPolymorphismForEach\obj\Debug\net8.0\05-AbstractClassPolymorphismForEach.pdb
+C:\Users\Classtime.PC_3_506_16\Desktop\APA103\05-AbstractClassPolymorphismForEach\obj\Debug\net8.0\05-AbstractClassPolymorphismForEach.genruntimeconfig.cache
+C:\Users\Classtime.PC_3_506_16\Desktop\APA103\05-AbstractClassPolymorphismForEach\obj\Debug\net8.0\ref\05-AbstractClassPolymorphismForEach.dll

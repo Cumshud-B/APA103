@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\APA103\\04-AccessModifiresEncupsulationNamespace\\04-AccessModifiresEncupsulationNamespace\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{99241DBD-87CF-46B6-ABF5-BCBDDA32CF12}|04-AccessModifiresEncupsulationNamespace\\04-AccessModifiresEncupsulationNamespace.csproj|c:\\users\\asus\\desktop\\apa103\\04-accessmodifiresencupsulationnamespace\\04-accessmodifiresencupsulationnamespace\\04-accessmodifiresencupsulationnamespace\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99241DBD-87CF-46B6-ABF5-BCBDDA32CF12}|04-AccessModifiresEncupsulationNamespace\\04-AccessModifiresEncupsulationNamespace.csproj|solutionrelative:04-accessmodifiresencupsulationnamespace\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99241DBD-87CF-46B6-ABF5-BCBDDA32CF12}|04-AccessModifiresEncupsulationNamespace\\04-AccessModifiresEncupsulationNamespace.csproj|c:\\users\\asus\\desktop\\apa103\\04-accessmodifiresencupsulationnamespace\\04-accessmodifiresencupsulationnamespace\\04-accessmodifiresencupsulationnamespace\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99241DBD-87CF-46B6-ABF5-BCBDDA32CF12}|04-AccessModifiresEncupsulationNamespace\\04-AccessModifiresEncupsulationNamespace.csproj|solutionrelative:04-accessmodifiresencupsulationnamespace\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\APA103\\04-AccessModifiresEncupsulationNamespace\\04-AccessModifiresEncupsulationNamespace\\04-AccessModifiresEncupsulationNamespace\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "04-AccessModifiresEncupsulationNamespace\\Models\\Car.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\APA103\\04-AccessModifiresEncupsulationNamespace\\04-AccessModifiresEncupsulationNamespace\\04-AccessModifiresEncupsulationNamespace\\Models\\Car.cs",
+              "RelativeToolTip": "04-AccessModifiresEncupsulationNamespace\\Models\\Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T19:35:50.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\APA103\\04-AccessModifiresEncupsulationNamespace\\04-AccessModifiresEncupsulationNamespace\\04-AccessModifiresEncupsulationNamespace\\Program.cs",
+              "RelativeDocumentMoniker": "04-AccessModifiresEncupsulationNamespace\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\APA103\\04-AccessModifiresEncupsulationNamespace\\04-AccessModifiresEncupsulationNamespace\\04-AccessModifiresEncupsulationNamespace\\Program.cs",
+              "RelativeToolTip": "04-AccessModifiresEncupsulationNamespace\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T17:05:52.029Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

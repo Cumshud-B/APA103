@@ -1,0 +1,15 @@
+C:\Users\bakti\OneDrive\Masaüstü\APA103\08-StatiClassExtensionMethodsExceptions\bin\Debug\net10.0\08-StatiClassExtensionMethodsExceptions.exe
+C:\Users\bakti\OneDrive\Masaüstü\APA103\08-StatiClassExtensionMethodsExceptions\bin\Debug\net10.0\08-StatiClassExtensionMethodsExceptions.deps.json
+C:\Users\bakti\OneDrive\Masaüstü\APA103\08-StatiClassExtensionMethodsExceptions\bin\Debug\net10.0\08-StatiClassExtensionMethodsExceptions.runtimeconfig.json
+C:\Users\bakti\OneDrive\Masaüstü\APA103\08-StatiClassExtensionMethodsExceptions\bin\Debug\net10.0\08-StatiClassExtensionMethodsExceptions.dll
+C:\Users\bakti\OneDrive\Masaüstü\APA103\08-StatiClassExtensionMethodsExceptions\bin\Debug\net10.0\08-StatiClassExtensionMethodsExceptions.pdb
+C:\Users\bakti\OneDrive\Masaüstü\APA103\08-StatiClassExtensionMethodsExceptions\obj\Debug\net10.0\08-StatiClassExtensionMethodsExceptions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bakti\OneDrive\Masaüstü\APA103\08-StatiClassExtensionMethodsExceptions\obj\Debug\net10.0\08-StatiClassExtensionMethodsExceptions.AssemblyInfoInputs.cache
+C:\Users\bakti\OneDrive\Masaüstü\APA103\08-StatiClassExtensionMethodsExceptions\obj\Debug\net10.0\08-StatiClassExtensionMethodsExceptions.AssemblyInfo.cs
+C:\Users\bakti\OneDrive\Masaüstü\APA103\08-StatiClassExtensionMethodsExceptions\obj\Debug\net10.0\08-StatiClassExtensionMethodsExceptions.csproj.CoreCompileInputs.cache
+C:\Users\bakti\OneDrive\Masaüstü\APA103\08-StatiClassExtensionMethodsExceptions\obj\Debug\net10.0\08-StatiClassExtensionMethodsExceptions.sourcelink.json
+C:\Users\bakti\OneDrive\Masaüstü\APA103\08-StatiClassExtensionMethodsExceptions\obj\Debug\net10.0\08-StatiClassExtensionMethodsExceptions.dll
+C:\Users\bakti\OneDrive\Masaüstü\APA103\08-StatiClassExtensionMethodsExceptions\obj\Debug\net10.0\refint\08-StatiClassExtensionMethodsExceptions.dll
+C:\Users\bakti\OneDrive\Masaüstü\APA103\08-StatiClassExtensionMethodsExceptions\obj\Debug\net10.0\08-StatiClassExtensionMethodsExceptions.pdb
+C:\Users\bakti\OneDrive\Masaüstü\APA103\08-StatiClassExtensionMethodsExceptions\obj\Debug\net10.0\08-StatiClassExtensionMethodsExceptions.genruntimeconfig.cache
+C:\Users\bakti\OneDrive\Masaüstü\APA103\08-StatiClassExtensionMethodsExceptions\obj\Debug\net10.0\ref\08-StatiClassExtensionMethodsExceptions.dll

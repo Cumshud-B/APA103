@@ -1,0 +1,15 @@
+C:\Users\bakti\OneDrive\Masaüstü\APA103\06-InterfaceAbstraction\bin\Debug\net10.0\06-InterfaceAbstraction.exe
+C:\Users\bakti\OneDrive\Masaüstü\APA103\06-InterfaceAbstraction\bin\Debug\net10.0\06-InterfaceAbstraction.deps.json
+C:\Users\bakti\OneDrive\Masaüstü\APA103\06-InterfaceAbstraction\bin\Debug\net10.0\06-InterfaceAbstraction.runtimeconfig.json
+C:\Users\bakti\OneDrive\Masaüstü\APA103\06-InterfaceAbstraction\bin\Debug\net10.0\06-InterfaceAbstraction.dll
+C:\Users\bakti\OneDrive\Masaüstü\APA103\06-InterfaceAbstraction\bin\Debug\net10.0\06-InterfaceAbstraction.pdb
+C:\Users\bakti\OneDrive\Masaüstü\APA103\06-InterfaceAbstraction\obj\Debug\net10.0\06-InterfaceAbstraction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bakti\OneDrive\Masaüstü\APA103\06-InterfaceAbstraction\obj\Debug\net10.0\06-InterfaceAbstraction.AssemblyInfoInputs.cache
+C:\Users\bakti\OneDrive\Masaüstü\APA103\06-InterfaceAbstraction\obj\Debug\net10.0\06-InterfaceAbstraction.AssemblyInfo.cs
+C:\Users\bakti\OneDrive\Masaüstü\APA103\06-InterfaceAbstraction\obj\Debug\net10.0\06-InterfaceAbstraction.csproj.CoreCompileInputs.cache
+C:\Users\bakti\OneDrive\Masaüstü\APA103\06-InterfaceAbstraction\obj\Debug\net10.0\06-InterfaceAbstraction.sourcelink.json
+C:\Users\bakti\OneDrive\Masaüstü\APA103\06-InterfaceAbstraction\obj\Debug\net10.0\06-InterfaceAbstraction.dll
+C:\Users\bakti\OneDrive\Masaüstü\APA103\06-InterfaceAbstraction\obj\Debug\net10.0\refint\06-InterfaceAbstraction.dll
+C:\Users\bakti\OneDrive\Masaüstü\APA103\06-InterfaceAbstraction\obj\Debug\net10.0\06-InterfaceAbstraction.pdb
+C:\Users\bakti\OneDrive\Masaüstü\APA103\06-InterfaceAbstraction\obj\Debug\net10.0\06-InterfaceAbstraction.genruntimeconfig.cache
+C:\Users\bakti\OneDrive\Masaüstü\APA103\06-InterfaceAbstraction\obj\Debug\net10.0\ref\06-InterfaceAbstraction.dll

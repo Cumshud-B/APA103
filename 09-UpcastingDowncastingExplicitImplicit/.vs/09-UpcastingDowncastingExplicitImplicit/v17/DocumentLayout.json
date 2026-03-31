@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\APA103\\08-StatiClassExtensionMethodsExceptions\\09-UpcastingDowncastingExplicitImplicit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15ADA98A-A20F-4FA4-8FFF-3FD7E32F6384}|09-UpcastingDowncastingExplicitImplicit\\09-UpcastingDowncastingExplicitImplicit.csproj|c:\\users\\asus\\desktop\\apa103\\08-staticlassextensionmethodsexceptions\\09-upcastingdowncastingexplicitimplicit\\09-upcastingdowncastingexplicitimplicit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15ADA98A-A20F-4FA4-8FFF-3FD7E32F6384}|09-UpcastingDowncastingExplicitImplicit\\09-UpcastingDowncastingExplicitImplicit.csproj|solutionrelative:09-upcastingdowncastingexplicitimplicit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15ADA98A-A20F-4FA4-8FFF-3FD7E32F6384}|09-UpcastingDowncastingExplicitImplicit\\09-UpcastingDowncastingExplicitImplicit.csproj|c:\\users\\asus\\desktop\\apa103\\08-staticlassextensionmethodsexceptions\\09-upcastingdowncastingexplicitimplicit\\09-upcastingdowncastingexplicitimplicit\\models\\eagle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15ADA98A-A20F-4FA4-8FFF-3FD7E32F6384}|09-UpcastingDowncastingExplicitImplicit\\09-UpcastingDowncastingExplicitImplicit.csproj|solutionrelative:09-upcastingdowncastingexplicitimplicit\\models\\eagle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15ADA98A-A20F-4FA4-8FFF-3FD7E32F6384}|09-UpcastingDowncastingExplicitImplicit\\09-UpcastingDowncastingExplicitImplicit.csproj|c:\\users\\asus\\desktop\\apa103\\08-staticlassextensionmethodsexceptions\\09-upcastingdowncastingexplicitimplicit\\09-upcastingdowncastingexplicitimplicit\\models\\dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15ADA98A-A20F-4FA4-8FFF-3FD7E32F6384}|09-UpcastingDowncastingExplicitImplicit\\09-UpcastingDowncastingExplicitImplicit.csproj|solutionrelative:09-upcastingdowncastingexplicitimplicit\\models\\dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15ADA98A-A20F-4FA4-8FFF-3FD7E32F6384}|09-UpcastingDowncastingExplicitImplicit\\09-UpcastingDowncastingExplicitImplicit.csproj|c:\\users\\asus\\desktop\\apa103\\08-staticlassextensionmethodsexceptions\\09-upcastingdowncastingexplicitimplicit\\09-upcastingdowncastingexplicitimplicit\\models\\animals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15ADA98A-A20F-4FA4-8FFF-3FD7E32F6384}|09-UpcastingDowncastingExplicitImplicit\\09-UpcastingDowncastingExplicitImplicit.csproj|solutionrelative:09-upcastingdowncastingexplicitimplicit\\models\\animals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dog.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\APA103\\08-StatiClassExtensionMethodsExceptions\\09-UpcastingDowncastingExplicitImplicit\\09-UpcastingDowncastingExplicitImplicit\\Models\\Dog.cs",
+              "RelativeDocumentMoniker": "09-UpcastingDowncastingExplicitImplicit\\Models\\Dog.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\APA103\\08-StatiClassExtensionMethodsExceptions\\09-UpcastingDowncastingExplicitImplicit\\09-UpcastingDowncastingExplicitImplicit\\Models\\Dog.cs",
+              "RelativeToolTip": "09-UpcastingDowncastingExplicitImplicit\\Models\\Dog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T16:14:19.159Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Eagle.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\APA103\\08-StatiClassExtensionMethodsExceptions\\09-UpcastingDowncastingExplicitImplicit\\09-UpcastingDowncastingExplicitImplicit\\Models\\Eagle.cs",
+              "RelativeDocumentMoniker": "09-UpcastingDowncastingExplicitImplicit\\Models\\Eagle.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\APA103\\08-StatiClassExtensionMethodsExceptions\\09-UpcastingDowncastingExplicitImplicit\\09-UpcastingDowncastingExplicitImplicit\\Models\\Eagle.cs",
+              "RelativeToolTip": "09-UpcastingDowncastingExplicitImplicit\\Models\\Eagle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T16:12:39.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\APA103\\08-StatiClassExtensionMethodsExceptions\\09-UpcastingDowncastingExplicitImplicit\\09-UpcastingDowncastingExplicitImplicit\\Program.cs",
+              "RelativeDocumentMoniker": "09-UpcastingDowncastingExplicitImplicit\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\APA103\\08-StatiClassExtensionMethodsExceptions\\09-UpcastingDowncastingExplicitImplicit\\09-UpcastingDowncastingExplicitImplicit\\Program.cs",
+              "RelativeToolTip": "09-UpcastingDowncastingExplicitImplicit\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T16:01:19.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Animals.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\APA103\\08-StatiClassExtensionMethodsExceptions\\09-UpcastingDowncastingExplicitImplicit\\09-UpcastingDowncastingExplicitImplicit\\Models\\Animals.cs",
+              "RelativeDocumentMoniker": "09-UpcastingDowncastingExplicitImplicit\\Models\\Animals.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\APA103\\08-StatiClassExtensionMethodsExceptions\\09-UpcastingDowncastingExplicitImplicit\\09-UpcastingDowncastingExplicitImplicit\\Models\\Animals.cs",
+              "RelativeToolTip": "09-UpcastingDowncastingExplicitImplicit\\Models\\Animals.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T16:06:09.968Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

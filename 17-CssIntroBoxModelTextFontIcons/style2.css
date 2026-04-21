@@ -1,0 +1,246 @@
+:root {
+    --cream: #f0ead6;
+    --parchment: #e8dfc4;
+    --dark-ink: #1a1410;
+    --gold: #b8872a;
+    --gold-light: #d4a84b;
+    --sepia: #8b7355;
+    --brown-dark: #3d2b1a;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: var(--cream);
+    font-family: 'Cormorant Garamond', serif;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='0.07'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.5;
+  }
+
+  .bg-layer {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    opacity: 0.06;
+  }
+
+  .bg-layer::before {
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis molestie dictum semper, arcu ligula aliquet lorem, ut faucibus velit diam et nibh. Sed commodo posuere pede. Mauris ut est. Ut quis purus. Sed ac odio.';
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 60%;
+    font-family: 'IM Fell English', serif;
+    font-size: 9px;
+    line-height: 1.8;
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px 0;
+  }
+
+  .receipt-box {
+    position: absolute;
+    top: 48px;
+    right: 30px;
+    border: 1px solid var(--sepia);
+    padding: 6px 10px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 9px;
+    color: var(--sepia);
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    opacity: 0.65;
+  }
+
+  .receipt-box span {
+    display: block;
+    text-align: center;
+  }
+
+  .receipt-box .big-num {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gold);
+  }
+
+  .label-the {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(18px, 3vw, 26px);
+    font-weight: 700;
+    letter-spacing: 0.35em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: -10px;
+  }
+
+  .title-script {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: clamp(72px, 14vw, 160px);
+    color: var(--dark-ink);
+    line-height: 0.85;
+    letter-spacing: -2px;
+    position: relative;
+    text-shadow: 3px 4px 0px rgba(0, 0, 0, 0.08);
+  }
+
+  .title-script .swash-h::before {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: -22px;
+    width: 80px;
+    height: 60px;
+    border-top: 2px solid var(--dark-ink);
+    border-radius: 50% 50% 0 0 / 30px 30px 0 0;
+    transform: rotate(-15deg);
+    opacity: 0.5;
+  }
+
+  .label-family {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(22px, 4vw, 42px);
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+  .divider {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 18px 0;
+  }
+
+  .divider-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--sepia), transparent);
+  }
+
+  .divider-ornament {
+    color: var(--gold);
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  .subtitle-row {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(14px, 2.5vw, 22px);
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    color: var(--dark-ink);
+    text-transform: uppercase;
+  }
+
+  .tagline {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: clamp(14px, 2.2vw, 22px);
+    color: var(--gold-light);
+    margin-top: 14px;
+    letter-spacing: 0.02em;
+  }
+
+  .bottom-strip {
+    margin-top: 50px;
+    width: calc(100% + 80px);
+    background: linear-gradient(to bottom, #8b6e45, #6b4f2d);
+    padding: 18px 40px;
+    display: flex;
+    justify-content: center;
+    gap: clamp(16px, 4vw, 60px);
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bottom-strip::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='80'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='80' filter='url(%23n)' opacity='0.15'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  .bottom-strip::after {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 100%;
+    height: 14px;
+    background: linear-gradient(to bottom, transparent, #8b6e45);
+    clip-path: polygon(0% 100%, 2% 20%, 5% 80%, 8% 10%, 11% 70%, 14% 0%, 17% 60%, 20% 15%, 23% 75%, 26% 5%, 29% 65%, 32% 20%, 35% 80%, 38% 0%, 41% 70%, 44% 25%, 47% 85%, 50% 10%, 53% 75%, 56% 20%, 59% 60%, 62% 5%, 65% 70%, 68% 15%, 71% 80%, 74% 30%, 77% 75%, 80% 10%, 83% 65%, 86% 20%, 89% 80%, 92% 5%, 95% 60%, 98% 25%, 100% 70%, 100% 100%);
+  }
+
+  .strip-item {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(9px, 1.5vw, 13px);
+    font-weight: 300;
+    letter-spacing: 0.28em;
+    color: var(--cream);
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .strip-dot {
+    color: var(--gold-light);
+    font-size: 16px;
+    line-height: 1;
+    opacity: 0.7;
+  }
+
+  .title-script:hover {
+    text-shadow: 2px 3px 0 rgba(0, 0, 0, 0.12), -1px -1px 0 rgba(0, 0, 0, 0.04);
+    cursor: default;
+  }
+
+  .fold-h {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent 5%, rgba(160, 130, 90, 0.18) 20%, rgba(160, 130, 90, 0.18) 80%, transparent 95%);
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .fold-v {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent 5%, rgba(160, 130, 90, 0.15) 20%, rgba(160, 130, 90, 0.15) 80%, transparent 95%);
+    pointer-events: none;
+    z-index: 2;
+  }

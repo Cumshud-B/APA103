@@ -1,0 +1,96 @@
+*,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --blue: #2563c7;
+      --dark: #1a1a2e;
+      --text: #2d2d2d;
+      --muted: #555;
+      --bg: #f9f8f5;
+      --border: #e0ddd5;
+    }
+
+    body {
+      background: var(--bg);
+      font-family: 'Lora', Georgia, serif;
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+    }
+
+    .wrapper {
+      max-width: 720px;
+      width: 100%;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      align-items: center;
+      padding: 2.8rem 2.5rem;
+      gap: 2rem;
+      position: relative;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.07);
+    }
+
+    .card+.card {
+      margin-top: 2rem;
+      border-top: 2px solid var(--blue);
+    }
+
+    .card:first-child {
+      border-top: 2px solid var(--blue);
+    }
+
+    .time-label {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--blue);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      text-align: right;
+      padding-right: 1.5rem;
+      border-right: 1px solid var(--border);
+    }
+
+    .body-text {
+      font-size: 0.93rem;
+      line-height: 1.75;
+      color: var(--muted);
+      text-align: justify;
+    }
+
+    /* Second card: italic serif */
+    .card.italic-style .body-text {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-style: italic;
+      font-size: 0.97rem;
+      line-height: 1.8;
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    /* Subtle divider line */
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: var(--blue);
+      margin: 0 auto 2rem;
+      opacity: 0.3;
+    }

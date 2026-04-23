@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODE — Fashion Store</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="#">MODE</a>
+        <nav>
+            <a href="#">New In</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Accessories</a>
+            <a href="#">Sale</a>
+        </nav>
+        <div class="header-icons">
+            <span>🔍</span>
+            <span>🤍</span>
+            <span>🛍️</span>
+        </div>
+    </header>
+
+    <div class="promo-bar">✦ Free shipping on orders over $75 &nbsp;|&nbsp; New arrivals every Friday ✦</div>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Spring<br>Collection<br>2026</h1>
+            <p>Refined essentials and bold statement pieces crafted for the modern wardrobe.</p>
+            <a class="btn" href="#">Shop Now</a>
+            <a class="btn btn-outline" href="#">View Lookbook</a>
+        </div>
+        <div class="hero-images">
+            <img class="hero-img"
+                src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=400&h=480&fit=crop&auto=format&q=80"
+                alt="Jacket">
+            <img class="hero-img"
+                src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=480&fit=crop&auto=format&q=80"
+                alt="Bag">
+        </div>
+    </section>
+
+    <div class="categories">
+        <a class="cat-chip active" href="#">All</a>
+        <a class="cat-chip" href="#">Jackets</a>
+        <a class="cat-chip" href="#">T-Shirts</a>
+        <a class="cat-chip" href="#">Footwear</a>
+        <a class="cat-chip" href="#">Bags</a>
+        <a class="cat-chip" href="#">Scarves</a>
+        <a class="cat-chip" href="#">Caps</a>
+        <a class="cat-chip" href="#">Accessories</a>
+    </div>
+
+    <div class="toolbar">
+        <span>Showing 1–12 of 126 results</span>
+        <select>
+            <option>Sort by: Price Low to High</option>
+            <option>Sort by: Price High to Low</option>
+            <option>Sort by: Newest</option>
+            <option>Sort by: Popular</option>
+        </select>
+    </div>
+
+    <div class="shop-wrap">
+
+        <aside class="sidebar">
+            <h3>Filter</h3>
+            <div class="filter-group">
+                <label>Category</label>
+                <div class="filter-option"><input type="checkbox" checked> Jackets</div>
+                <div class="filter-option"><input type="checkbox"> T-Shirts</div>
+                <div class="filter-option"><input type="checkbox"> Bags</div>
+                <div class="filter-option"><input type="checkbox"> Footwear</div>
+                <div class="filter-option"><input type="checkbox"> Scarves</div>
+                <div class="filter-option"><input type="checkbox"> Accessories</div>
+            </div>
+            <div class="filter-group">
+                <label>Price Range</label>
+                <input type="range" min="0" max="300" value="150">
+                <div class="price-range">$0 — $300</div>
+            </div>
+            <div class="filter-group">
+                <label>Size</label>
+                <div class="filter-option"><input type="checkbox"> XS</div>
+                <div class="filter-option"><input type="checkbox" checked> S</div>
+                <div class="filter-option"><input type="checkbox" checked> M</div>
+                <div class="filter-option"><input type="checkbox"> L</div>
+                <div class="filter-option"><input type="checkbox"> XL</div>
+            </div>
+            <div class="filter-group">
+                <label>Status</label>
+                <div class="filter-option"><input type="checkbox"> On Sale</div>
+                <div class="filter-option"><input type="checkbox"> New Arrivals</div>
+                <div class="filter-option"><input type="checkbox"> In Stock</div>
+            </div>
+        </aside>
+
+        <div class="grid">
+
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=500&h=660&fit=crop&auto=format&q=80"
+                        alt="Piqué Biker Jacket">
+                    <button class="wishlist-btn">🤍</button>
+                    <button class="quick-add">+ Quick Add</button>
+                </div>
+                <div class="card-info">
+                    <div class="card-name">Piqué Biker Jacket</div>
+                    <div class="stars">★★★★★ <span>(24)</span></div>
+                    <div class="price-row"><span class="price">$67.24</span></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&h=660&fit=crop&auto=format&q=80"
+                        alt="Multi-pocket Chest Bag">
+                    <span class="badge-sale">Sale</span>
+                    <button class="wishlist-btn">🤍</button>
+                    <button class="quick-add">+ Quick Add</button>
+                </div>
+                <div class="card-info">
+                    <div class="card-name">Multi-pocket Chest Bag</div>
+                    <div class="stars">★★★★☆ <span>(18)</span></div>
+                    <div class="price-row">
+                        <span class="price price-sale">$43.48</span>
+                        <span class="price-old">$58.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=500&h=660&fit=crop&auto=format&q=80"
+                        alt="Diagonal Textured Cap">
+                    <button class="wishlist-btn">🤍</button>
+                    <button class="quick-add">+ Quick Add</button>
+                </div>
+                <div class="card-info">
+                    <div class="card-name">Diagonal Textured Cap</div>
+                    <div class="stars">★★★☆☆ <span>(9)</span></div>
+                    <div class="price-row"><span class="price">$60.90</span></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=660&fit=crop&auto=format&q=80"
+                        alt="Ankle Boots">
+                    <span class="badge-sale">Sale</span>
+                    <button class="wishlist-btn">🤍</button>
+                    <button class="quick-add">+ Quick Add</button>
+                </div>
+                <div class="card-info">
+                    <div class="card-name">Ankle Boots</div>
+                    <div class="stars">★★★★☆ <span>(31)</span></div>
+                    <div class="price-row">
+                        <span class="price price-sale">$98.49</span>
+                        <span class="price-old">$120.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=660&fit=crop&auto=format&q=80"
+                        alt="T-shirt Contrast Pocket">
+                    <button class="wishlist-btn">🤍</button>
+                    <button class="quick-add">+ Quick Add</button>
+                </div>
+                <div class="card-info">
+                    <div class="card-name">T-shirt Contrast Pocket</div>
+                    <div class="stars">★★★★★ <span>(42)</span></div>
+                    <div class="price-row"><span class="price">$49.66</span></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=500&h=660&fit=crop&auto=format&q=80"
+                        alt="Basic Flowing Scarf">
+                    <button class="wishlist-btn">🤍</button>
+                    <button class="quick-add">+ Quick Add</button>
+                </div>
+                <div class="card-info">
+                    <div class="card-name">Basic Flowing Scarf</div>
+                    <div class="stars">★★★★☆ <span>(7)</span></div>
+                    <div class="price-row"><span class="price">$26.28</span></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500&h=660&fit=crop&auto=format&q=80"
+                        alt="Linen Summer Shirt">
+                    <span class="badge-new">New</span>
+                    <button class="wishlist-btn">🤍</button>
+                    <button class="quick-add">+ Quick Add</button>
+                </div>
+                <div class="card-info">
+                    <div class="card-name">Linen Summer Shirt</div>
+                    <div class="stars">★★★★★ <span>(11)</span></div>
+                    <div class="price-row"><span class="price">$67.24</span></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?w=500&h=660&fit=crop&auto=format&q=80"
+                        alt="Leather Tote Bag">
+                    <span class="badge-sale">Sale</span>
+                    <button class="wishlist-btn">🤍</button>
+                    <button class="quick-add">+ Quick Add</button>
+                </div>
+                <div class="card-info">
+                    <div class="card-name">Leather Tote Bag</div>
+                    <div class="stars">★★★★☆ <span>(18)</span></div>
+                    <div class="price-row">
+                        <span class="price price-sale">$43.48</span>
+                        <span class="price-old">$58.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&h=660&fit=crop&auto=format&q=80"
+                        alt="Classic Sunglasses">
+                    <button class="wishlist-btn">🤍</button>
+                    <button class="quick-add">+ Quick Add</button>
+                </div>
+                <div class="card-info">
+                    <div class="card-name">Classic Sunglasses</div>
+                    <div class="stars">★★★☆☆ <span>(9)</span></div>
+                    <div class="price-row"><span class="price">$60.90</span></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500&h=660&fit=crop&auto=format&q=80"
+                        alt="Chelsea Ankle Boot">
+                    <span class="badge-new">New</span>
+                    <button class="wishlist-btn">🤍</button>
+                    <button class="quick-add">+ Quick Add</button>
+                </div>
+                <div class="card-info">
+                    <div class="card-name">Chelsea Ankle Boot</div>
+                    <div class="stars">★★★★☆ <span>(31)</span></div>
+                    <div class="price-row"><span class="price">$98.49</span></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=660&fit=crop&auto=format&q=80"
+                        alt="Canvas Backpack">
+                    <button class="wishlist-btn">🤍</button>
+                    <button class="quick-add">+ Quick Add</button>
+                </div>
+                <div class="card-info">
+                    <div class="card-name">Canvas Backpack</div>
+                    <div class="stars">★★★★★ <span>(42)</span></div>
+                    <div class="price-row"><span class="price">$49.66</span></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&h=660&fit=crop&auto=format&q=80"
+                        alt="Premium Watch">
+                    <button class="wishlist-btn">🤍</button>
+                    <button class="quick-add">+ Quick Add</button>
+                </div>
+                <div class="card-info">
+                    <div class="card-name">Premium Watch</div>
+                    <div class="stars">★★★★☆ <span>(7)</span></div>
+                    <div class="price-row"><span class="price">$26.28</span></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="pagination">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn" style="width:auto;padding:0 10px">...</button>
+        <button class="page-btn">21</button>
+    </div>
+
+    <section class="newsletter">
+        <h2>Stay in the Loop</h2>
+        <p>Subscribe for new arrivals, exclusive deals, and style inspiration.</p>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button>Subscribe</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a class="logo" href="#">MODE</a>
+                <p>Contemporary fashion for those who appreciate quality, craftsmanship, and understated style.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <a href="#">New Arrivals</a>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Accessories</a>
+                <a href="#">Sale</a>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <a href="#">Shipping Info</a>
+                <a href="#">Returns</a>
+                <a href="#">Size Guide</a>
+                <a href="#">Contact Us</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="#">About</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+                <a href="#">Sustainability</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 MODE. All rights reserved.</span>
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

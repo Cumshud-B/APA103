@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulyator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&family=Syne:wght@400;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <div class="bg-grid"></div>
+    <div class="glow-orb orb1"></div>
+    <div class="glow-orb orb2"></div>
+
+    <main class="calc-container">
+
+        <header class="calc-header">
+            <span class="calc-label">KALKULYATOR</span>
+            <button class="hist-toggle" id="histToggle" title="Tarixçə">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.2" />
+                    <path d="M8 4.5V8.5L10.5 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" />
+                </svg>
+            </button>
+        </header>
+
+        <div class="history-panel" id="histPanel">
+            <div class="history-inner" id="histInner">
+                <p class="hist-empty" id="histEmpty">Tarixçə boşdur.</p>
+            </div>
+        </div>
+
+
+        <div class="display">
+            <div class="display-expr" id="expr">&nbsp;</div>
+            <div class="display-main" id="main">0</div>
+        </div>
+
+
+        <div class="op-row">
+            <button class="op-chip" data-op="plus">Plus</button>
+            <button class="op-chip" data-op="minus">Minus</button>
+            <button class="op-chip" data-op="mult">Mult</button>
+            <button class="op-chip" data-op="divide">Divide</button>
+        </div>
+
+
+        <div class="keypad">
+
+            <button class="key fn" id="btnAC">AC</button>
+            <button class="key fn" id="btnSign">±</button>
+            <button class="key fn" id="btnPct">%</button>
+            <button class="key op" data-op="divide">÷</button>
+
+            <button class="key num" data-num="7">7</button>
+            <button class="key num" data-num="8">8</button>
+            <button class="key num" data-num="9">9</button>
+            <button class="key op" data-op="mult">×</button>
+
+            <button class="key num" data-num="4">4</button>
+            <button class="key num" data-num="5">5</button>
+            <button class="key num" data-num="6">6</button>
+            <button class="key op" data-op="minus">−</button>
+
+            <button class="key num" data-num="1">1</button>
+            <button class="key num" data-num="2">2</button>
+            <button class="key num" data-num="3">3</button>
+            <button class="key op" data-op="plus">+</button>
+
+            <button class="key num wide" data-num="0">0</button>
+            <button class="key num" data-num=".">.</button>
+            <button class="key fn del" id="btnDel">⌫</button>
+            <button class="key eq" id="btnEq">=</button>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

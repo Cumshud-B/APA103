@@ -1,0 +1,31 @@
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\bin\Debug\net8.0\appsettings.json
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\bin\Debug\net8.0\25-MVC Intro.staticwebassets.endpoints.json
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\bin\Debug\net8.0\25-MVC Intro.exe
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\bin\Debug\net8.0\25-MVC Intro.deps.json
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\bin\Debug\net8.0\25-MVC Intro.runtimeconfig.json
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\bin\Debug\net8.0\25-MVC Intro.dll
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\bin\Debug\net8.0\25-MVC Intro.pdb
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\25-MVC Intro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\25-MVC Intro.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\25-MVC Intro.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\25-MVC Intro.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\25-MVC Intro.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\25-MVC Intro.sourcelink.json
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\scopedcss\bundle\25-MVC Intro.styles.css
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\25-MVC Intro.dll
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\refint\25-MVC Intro.dll
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\25-MVC Intro.pdb
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\25-MVC Intro.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\ref\25-MVC Intro.dll
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\25-MVC Intro.RazorAssemblyInfo.cache
+C:\Users\ASUS\Desktop\25-MVC Intro\25-MVC Intro\25-MVC Intro\obj\Debug\net8.0\25-MVC Intro.RazorAssemblyInfo.cs

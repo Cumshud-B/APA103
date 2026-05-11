@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bakti\\OneDrive\\Masaüstü\\27-FrontToBackSqlConnection\\27-FrontToBackSqlConnection.csproj": {}
+    "C:\\Users\\bakti\\OneDrive\\Masaüstü\\APA103\\27-FrontToBackSqlConnection\\27-FrontToBackSqlConnection.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bakti\\OneDrive\\Masaüstü\\27-FrontToBackSqlConnection\\27-FrontToBackSqlConnection.csproj": {
+    "C:\\Users\\bakti\\OneDrive\\Masaüstü\\APA103\\27-FrontToBackSqlConnection\\27-FrontToBackSqlConnection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bakti\\OneDrive\\Masaüstü\\27-FrontToBackSqlConnection\\27-FrontToBackSqlConnection.csproj",
+        "projectUniqueName": "C:\\Users\\bakti\\OneDrive\\Masaüstü\\APA103\\27-FrontToBackSqlConnection\\27-FrontToBackSqlConnection.csproj",
         "projectName": "27-FrontToBackSqlConnection",
-        "projectPath": "C:\\Users\\bakti\\OneDrive\\Masaüstü\\27-FrontToBackSqlConnection\\27-FrontToBackSqlConnection.csproj",
+        "projectPath": "C:\\Users\\bakti\\OneDrive\\Masaüstü\\APA103\\27-FrontToBackSqlConnection\\27-FrontToBackSqlConnection.csproj",
         "packagesPath": "C:\\Users\\bakti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bakti\\OneDrive\\Masaüstü\\27-FrontToBackSqlConnection\\obj\\",
+        "outputPath": "C:\\Users\\bakti\\OneDrive\\Masaüstü\\APA103\\27-FrontToBackSqlConnection\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -2,6 +2,7 @@ using _27_FrontToBackSqlConnection.Data;
 using _27_FrontToBackSqlConnection.Models;
 using _27_FrontToBackSqlConnection.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace _27_FrontToBackSqlConnection.Controllers
@@ -26,7 +27,7 @@ namespace _27_FrontToBackSqlConnection.Controllers
         //    new Slider{Id=3, Title="Basliq-3", Subtitle="Komekci Basliq-3", Description= "Xirdalana manatdan", Image="1-3-570x633.jpg", Order=3, isDeleted=false}
 
         //};
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             
             //_context.AddRange(_sliders);
@@ -36,7 +37,9 @@ namespace _27_FrontToBackSqlConnection.Controllers
             //Category category = _context.Categories.FirstOrDefault(c => c.Id == product.CategoryId);
 
 
-            List<Slider> sliders = _context.Sliders.OrderBy(s => s.Order).Where(s => !s.isDeleted).Take(2).ToList();
+            List<Slider> sliders = await _context.Sliders.OrderBy(s => s.Order).Where(s => !s.isDeleted).Take(2).ToListAsync();
+
+            List<Product> products = await _context.Products.Where(p => !p.isDeleted).Include(p => p.ProductImages.Where(pi => pi.IsPrimary !=null)).ToListAsync(); 
 
             HomeVM homeVM = new()
             {

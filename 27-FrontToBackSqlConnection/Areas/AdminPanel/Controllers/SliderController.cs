@@ -1,5 +1,10 @@
-﻿using _27_FrontToBackSqlConnection.Data;
+﻿using _27_FrontToBackSqlConnection.Areas.AdminPanel.ViewModels;
+using _27_FrontToBackSqlConnection.Areas.AdminPanel.ViewModels;
+using _27_FrontToBackSqlConnection.Areas.AdminPanel.ViewModels.Sliders;
+using _27_FrontToBackSqlConnection.Data;
 using _27_FrontToBackSqlConnection.Models;
+using _27_FrontToBackSqlConnection.Utilities.Enums;
+using _27_FrontToBackSqlConnection.Utilities.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -33,44 +38,79 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
 
         [HttpPost]
 
-        public async Task<IActionResult> Create(Slider slider)
+        public async Task<IActionResult> Create(SliderCreateVM sliderCreateVM)
         {
-            if (!ModelState.IsValid)
+            if (!sliderCreateVM.Photo.CheckFileType("image/"))
             {
-                return View();
+                ModelState.AddModelError(nameof(SliderCreateVM.Photo), "Photo is required");
+                return View(sliderCreateVM);
             }
 
-            if (!slider.Photo.ContentType.Contains("image/"))
+
+            if (!sliderCreateVM.Photo.ContentType.Contains("image/"))
             {
-                ModelState.AddModelError(nameof(Slider.Photo), "File type must be image");
-                return View(slider);
+                ModelState.AddModelError(nameof(SliderCreateVM.Photo), "File type must be image");
+                return View(sliderCreateVM);
             }
 
-            if(slider.Photo.Length > 2 * 1024 * 1024)
+            if (!FileValidator.CheckFileSize(sliderCreateVM.Photo, FileSize.MB, 2))
             {
-                ModelState.AddModelError(nameof(Slider.Photo), "File size must be less than 2MB");
-                return View(slider);
+
+
+                Slider slider = new()
+                {
+                    Title = sliderCreateVM.Title,
+                    Subtitle = sliderCreateVM.Subtitle,
+                    Description = sliderCreateVM.Description,
+                    Order = sliderCreateVM.Order,
+                    Image = await sliderCreateVM.Photo.CreateFile(_env.WebRootPath, "assets", "images", "sliders"),
+
+                };
+
+
+
+                await context.AddAsync(sliderCreateVM);
+
+                await context.SaveChangesAsync();
+
+                return RedirectToAction(nameof(Index));
             }
 
-            string fileName = string.Concat(Guid.NewGuid().ToString(), slider.Photo.FileName);
+            ModelState.AddModelError(nameof(SliderCreateVM.Photo), "File size must be less than 2MB");
+            return View(sliderCreateVM);
+        }
 
-            string path = Path.Combine(_env.WebRootPath, "assets", "images", "website-images", slider.Photo.FileName);
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if(id is null || id < 1) return BadRequest();
 
-            FileStream fileStream = new FileStream(Path.Combine("wwwroot", "uploads", slider.Photo.FileName), FileMode.Create);
+            Slider? slider = await context.Sliders.Where(s => !s.isDeleted).FirstOrDefaultAsync(s => s.Id == id);
 
-            await slider.Photo.CopyToAsync(fileStream);
+            if (slider == null) return NotFound();
 
-            fileStream.Close();
+            slider.Image.DeleteFile(_env.WebRootPath, "assets", "images", "sliders");
 
-            slider.Image= fileName;
-
-            await context.AddAsync(slider);
-
+            context.Remove(slider);
             await context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));
+        }
 
+        public async Task<IActionResult> Update(int? id)
+        {
+            if (id is null || id < 1) return BadRequest();
+            Slider? slider = await context.Sliders.Where(s => !s.isDeleted).FirstOrDefaultAsync(s => s.Id == id);
+            if (slider == null) return NotFound();
+            SliderUpdateVM sliderUpdateVM = new()
+            {
+                Title = slider.Title,
+                Subtitle = slider.Subtitle,
+                Description = slider.Description,
+                Order = slider.Order,
+                Image = slider.Image
 
+            };
+            return View(sliderUpdateVM);
         }
     }
 }

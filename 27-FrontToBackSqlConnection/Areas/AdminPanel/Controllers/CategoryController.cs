@@ -81,7 +81,7 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
 
             if (!ModelState.IsValid) return View();
 
-            bool result = await _context.Categories.AnyAsync(c =>c.Name == category.Name && c.Id != id);
+            bool result = await _context.Categories.AnyAsync(c => c.Name == category.Name && c.Id != id);
 
             if (result)
             {
@@ -100,7 +100,8 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
             Category? exsistCategory = await _context.Categories.Where(c => !c.isDeleted).FirstOrDefaultAsync(c => c.Id == id);
             if (exsistCategory is null) return NotFound();
             _context.Categories.Remove(exsistCategory);
-            await._context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-        } 
+        }
+    }
 }

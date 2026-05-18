@@ -1,0 +1,69 @@
+﻿@using _27_FrontToBackSqlConnection.Areas.AdminPanel.ViewModels.Product
+@using _27_FrontToBackSqlConnection.Models
+@model List<ProductGetVM>
+<div class="row">
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Product Table</h4>
+                <div class="table-responsive">
+                    <a asp-action="Create" class="btn btn-outline-success btn-fw">Create</a>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Count
+                                <th>
+                                    Image
+                                </th>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    SKU
+                                </th>
+                                <th>
+                                        Price
+                                <th>
+                                    Category
+                                </th>
+                                <th>
+                                    Settings
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (ProductGetVM productGetVM in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <p>@(++count)</p>
+                                    </td>
+                                    <td>
+                                        <img style="width:70px; height:70px" src="~/assets/images/website-images//@productGetVM.Image" />
+                                    </td>
+                                    <td>
+                                        <p>@productGetVM.Name</p>
+                                    </td>
+                                    <td>
+                                        <p>@productGetVM.SKU</p>
+                                    </td>
+                                    <td>
+                                        <p>@productGetVM.Price</p>
+                                    </td>
+                                    <td>
+                                            <p>@productGetVM.CategoryName</p>
+                                    <td>
+                                        <a asp-action="Update" asp-route-id="@productGetVM.Id" class="btn btn-outline-warning btn-fw">Edit</a>
+                                        <a asp-action="Delete" asp-route-id="@productGetVM.Id" class="btn btn-outline-danger btn-fw">Delete </a>
+                                        <a asp-action="Detail" asp-route-id="@productGetVM.Id" class="btn btn-outline-info btn-fw">Detail</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

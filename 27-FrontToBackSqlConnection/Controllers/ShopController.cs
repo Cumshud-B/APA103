@@ -32,7 +32,14 @@ namespace _27_FrontToBackSqlConnection.Controllers
         {
             if (id == null || id < 1) return BadRequest();
 
-            Product? product = await _context.Products.Where(p=>!p.isDeleted).Include(p=>p.ProductImages.Where(pi=>pi.IsPrimary != null)).Include(p=>p.Category).FirstOrDefaultAsync(p=> p.Id == id);
+            Product? product = await _context.Products
+                .Where(p=>!p.isDeleted)
+                .Include(p=>p.ProductImages
+                .Where(pi=>pi.IsPrimary != null))
+                .Include(p=>p.Category)
+                .Include(p=>p.ProductTags)
+                .ThenInclude(pt=>pt.Tag)
+                .FirstOrDefaultAsync(p=> p.Id == id);
 
             List<Product> relatedProducts = await _context.Products.Where(p => !p.isDeleted).Include(p=>p.ProductImages).Where(p => p.CategoryId == product.CategoryId && p.Id != id).Take(2).ToListAsync();
 

@@ -61,10 +61,11 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
         {
             ProductCreateVM productCreateVM = new()
             {
-                Categories = await _context.Categories.Where(c => !c.isDeleted).ToListAsync()
+                Categories = await _context.Categories.Where(c => !c.isDeleted).ToListAsync(),
+                Tags = await _context.Tags.Where(t => !t.isDeleted).ToListAsync()
             };
 
-            return View(productCreateVM );
+            return View(productCreateVM);
         }
 
         [HttpPost]
@@ -72,6 +73,7 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
         {
 
             productCreateVM.Categories = await _context.Categories.Where(c => !c.isDeleted).ToListAsync();
+            productCreateVM.Tags = await _context.Tags.Where(t => !t.isDeleted).ToListAsync();
 
             if (!ModelState.IsValid) return View(productCreateVM);
 
@@ -82,7 +84,108 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
                 ModelState.AddModelError(nameof(ProductCreateVM.CategoryId), "Category does not exist.");
                 return View(productCreateVM);
             }
-            return View(productCreateVM);
+
+
+            bool existTag = productCreateVM.TagIds.Any(tagId => productCreateVM.Tags.Exists(t => t.Id == tagId));
+
+            if(!existTag)
+            {
+                ModelState.AddModelError(nameof(ProductCreateVM.TagIds), "One or more selected tags do not exist.");
+                return View(productCreateVM);
+            }
+
+            Product product = new()
+            {
+                Name = productCreateVM.Name,
+                Price = productCreateVM.Price,
+                SKU = productCreateVM.SKU,
+                Description = productCreateVM.Description,
+                CategoryId = productCreateVM.CategoryId.Value
+            };
+
+            if(productCreateVM.TagIds != null)
+            {
+                product.ProductTags = productCreateVM.TagIds.Select(tagId => new ProductTag
+                {
+                    TagId = tagId
+                }).ToList();
+            }
+
+            await _context.Products.AddAsync(product);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<IActionResult> Update(int? Id)
+        {
+            if (Id == null || Id < 1) BadRequest();
+            Product? existProduct = await _context.Products.Include(p=>p.ProductTags).FirstOrDefaultAsync(p => p.Id == Id);
+
+            if (existProduct == null) return NotFound();
+
+            if (!ModelState.IsValid) return View();
+
+            ProductUpdateVM productUpdateVM = new()
+            {
+                Name = existProduct.Name,
+                Price = existProduct.Price,
+                SKU = existProduct.SKU,
+                Description = existProduct.Description,
+                CategoryId = existProduct.CategoryId,
+                TagIds = existProduct.ProductTags?.Select(pt => pt.TagId).ToList(),
+                Categories = await _context.Categories.ToListAsync(),
+                Tags = await _context.Tags.ToListAsync()
+            };
+
+            return View(productUpdateVM);
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> Update(int? Id, ProductUpdateVM productUpdateVM)
+        {
+            if (Id == null || Id < 1) return BadRequest();
+            productUpdateVM.Categories = await _context.Categories.Where(c => !c.isDeleted).ToListAsync();
+            Product? existProduct = await _context.Products.FirstOrDefaultAsync(p => p.Id == Id);
+            if (existProduct == null) return NotFound();
+
+            if (!ModelState.IsValid) return View(productUpdateVM);
+            bool existCategory = productUpdateVM.Categories.Any(c => c.Id == productUpdateVM.CategoryId);
+            if (!existCategory)
+            {
+                ModelState.AddModelError(nameof(ProductUpdateVM.CategoryId), "Category does not exist.");
+                return View(productUpdateVM);
+            }
+
+            if(productUpdateVM.TagIds != null)
+            {
+                bool existTag = productUpdateVM.TagIds.Any(tagId => productUpdateVM.TagIds.Exists(t => t == tagId));
+                if (!existTag)
+                {
+                    ModelState.AddModelError(nameof(ProductUpdateVM.TagIds), "One or more selected tags do not exist.");
+                    return View(productUpdateVM);
+                }
+            }
+
+
+
+            existProduct.Name = productUpdateVM.Name;
+            existProduct.Price = productUpdateVM.Price;
+            existProduct.SKU = productUpdateVM.SKU;
+            existProduct.Description = productUpdateVM.Description;
+            existProduct.CategoryId = productUpdateVM.CategoryId.Value;
+            if(productUpdateVM.TagIds != null)
+            {
+                existProduct.ProductTags = productUpdateVM.TagIds.Select(tagId => new ProductTag()
+                {
+                    TagId = tagId
+                }).ToList();
+
+            }
+
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }

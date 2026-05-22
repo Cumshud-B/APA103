@@ -80,9 +80,9 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
             if (!ModelState.IsValid) return View(productCreateVM);
 
 
-            if(productCreateVM.MainPhoto.CheckFileType("image/"))
+            if (productCreateVM.MainPhoto.CheckFileType("image/"))
             {
-               ModelState.AddModelError(nameof(ProductCreateVM.MainPhoto), "Please select an image file.");
+                ModelState.AddModelError(nameof(ProductCreateVM.MainPhoto), "Please select an image file.");
                 return View(productCreateVM);
             }
 
@@ -151,6 +151,37 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
                 }).ToList();
             }
 
+            string info = string.Empty;
+
+            if(productCreateVM.AdditionalPhoto != null)
+            {
+                foreach (var file in productCreateVM.AdditionalPhoto)
+                {
+                    if (!file.CheckFileType("image/"))
+                    {
+                        info += $"<p class=\"text-danger\">File {file.FileName} is not an image.</p>";
+                        continue;
+                    }
+
+                    if (!file.CheckFileSize(FileSize.MB, 1))
+                    {
+                        info += $"<p class=\"text-danger\>File {file.FileName} exceeds the size limit.</p>";
+                        continue;
+                    }
+
+                    product.ProductImages.Add(new ProductImage
+                    {
+                        Image = await file.CreateFile(_env.WebRootPath, "assets", "images", "website-images"),
+                        IsPrimary = null
+                    });
+                }
+            }
+           
+
+           
+
+            TempData["FileInfo"] = info;
+
             await _context.Products.AddAsync(product);
             await _context.SaveChangesAsync();
         }
@@ -158,7 +189,7 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
         public async Task<IActionResult> Update(int? Id)
         {
             if (Id == null || Id < 1) BadRequest();
-            Product? existProduct = await _context.Products.Include(p=>p.ProductTags).FirstOrDefaultAsync(p => p.Id == Id);
+            Product? existProduct = await _context.Products.Include(p=>p.ProductImages).Include(p=>p.ProductTags).FirstOrDefaultAsync(p => p.Id == Id);
 
             if (existProduct == null) return NotFound();
 
@@ -173,7 +204,8 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
                 CategoryId = existProduct.CategoryId,
                 TagIds = existProduct.ProductTags?.Select(pt => pt.TagId).ToList(),
                 Categories = await _context.Categories.ToListAsync(),
-                Tags = await _context.Tags.ToListAsync()
+                Tags = await _context.Tags.ToListAsync()ç
+                productİmages = existProduct.ProductImages
             };
 
             return View(productUpdateVM);

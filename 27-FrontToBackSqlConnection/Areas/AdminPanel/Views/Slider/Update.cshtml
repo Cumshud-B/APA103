@@ -1,6 +1,14 @@
 ﻿@using _27_FrontToBackSqlConnection.Models
 @model Slider
 
+@{
+    ProductImage mainImage = Model.ProductImages.FirstOrDefault(pi => pi.IsPrimary  == true);
+    ProductImage hoverImage = Model.ProductImages.FirstOrDefault(pi => pi.IsPrimary == false);
+    List<ProductImage>  addImage = Model.ProductImages.Where(pi => pi.isPrimary == null);
+
+
+}
+
 <div class="row">
     <div class="col-md-6 grid-margin stretch-card">
         <div class="card">
@@ -40,3 +48,15 @@
         </div>
     </div>
 </div>
+
+@section DeleteImages {
+    <script>
+        var btns =btns.querySelectorAll(".custom-btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", ()=>{
+                btns[i].parentElement.parentElement();
+        
+            });
+        }
+    </script>
+}

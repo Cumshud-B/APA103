@@ -5,6 +5,8 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.ViewModels.Product
 {
     public class ProductUpdateVM
     {
+        internal List<Tag> Tags;
+
         public string Name { get; set; }
         public decimal Price { get; set; }
         public string Description { get; set; }

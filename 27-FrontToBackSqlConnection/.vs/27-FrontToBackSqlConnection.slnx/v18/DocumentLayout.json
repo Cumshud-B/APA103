@@ -58,8 +58,7 @@
               "RelativeToolTip": "Areas\\AdminPanel\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAgBAAAAAAAAAAAAABYBAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-22T22:55:17.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-22T22:55:17.731Z"
             },
             {
               "$type": "Document",
@@ -71,8 +70,7 @@
               "RelativeToolTip": "Areas\\AdminPanel\\Views\\Slider\\Update.cshtml",
               "ViewState": "AgIAACUAAAAAAAAAAAAAADwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-22T22:45:59.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-22T22:45:59.665Z"
             },
             {
               "$type": "Document",
@@ -96,8 +94,7 @@
               "RelativeToolTip": "Areas\\AdminPanel\\ViewModels\\Product\\ProductCreateVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T20:38:48.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T20:38:48.301Z"
             },
             {
               "$type": "Document",
@@ -145,8 +142,7 @@
               "RelativeToolTip": "Areas\\AdminPanel\\ViewModels\\Product\\ProductUpdateVM.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T20:00:03.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T20:00:03.348Z"
             },
             {
               "$type": "Document",
@@ -156,7 +152,7 @@
               "RelativeDocumentMoniker": "Areas\\AdminPanel\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\bakti\\OneDrive\\Masa\u00FCst\u00FC\\APA103\\27-FrontToBackSqlConnection\\Areas\\AdminPanel\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Areas\\AdminPanel\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAL8AAAAAAAAAAAAAAM8AAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAO8AAAAAAAAAAAAAAAUBAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-18T20:10:37.199Z",
               "EditorCaption": ""

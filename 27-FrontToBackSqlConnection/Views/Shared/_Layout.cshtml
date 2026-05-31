@@ -147,17 +147,33 @@
                           class="dropdown-menu"
                           aria-labelledby="settingButton"
                         >
-                          <li>
+                                                @if (User.Identity.IsAuthenticated)
+                                                    {
+                                                        <li>
                             <a class="dropdown-item" href="my-account.html"
-                              >My account</a
+                              >@User.Identity.Name</a
                             >
                           </li>
                           <li>
-                            <a class="dropdown-item" href="login-register.html"
-                              >Login | Register</a
+                            <a class="dropdown-item" asp-controller="account" asp-action="logout"
+                              >LogOut</a
                             >
                           </li>
-                        </ul>
+                                                    }
+
+                                                    @else{
+                                                        <li>
+                            <a class="dropdown-item" asp-controller="account" asp-action="logout"
+                              >Register</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" asp-controller="account" asp-action="logout"
+                            /> LogIn</a
+                            >
+                          </li>
+                                                    }
+                                                </ul>
                       </li>
                       <li class="d-none d-lg-block">
                         <a href="wishlist.html">

@@ -3,6 +3,7 @@ using _27_FrontToBackSqlConnection.Data;
 using _27_FrontToBackSqlConnection.Models;
 using _27_FrontToBackSqlConnection.Utilities.Enums;
 using _27_FrontToBackSqlConnection.Utilities.Extensions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using static System.Net.Mime.MediaTypeNames;
@@ -10,6 +11,7 @@ using static System.Net.Mime.MediaTypeNames;
 namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
 {
     [Area("AdminPanel")]
+    [Authorize(Roles = "Admin,Moderator,Member")]
     public class ProductController : Controller
     {
         private readonly AppDbContext _context;
@@ -58,7 +60,7 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
 
             return View(productGetVMs);
         }
-
+        [Authorize(Roles = "Admin, Moderator")]
         public async Task<IActionResult> Create()
         {
             ProductCreateVM productCreateVM = new()
@@ -183,7 +185,7 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
             await _context.Products.AddAsync(product);
             await _context.SaveChangesAsync();
         }
-
+        [Authorize(Roles = "Admin,Moderator")]
         public async Task<IActionResult> Update(int? Id)
         {
             if (Id == null || Id < 1) BadRequest();

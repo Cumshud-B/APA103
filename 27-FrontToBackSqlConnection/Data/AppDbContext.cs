@@ -1,11 +1,15 @@
 ﻿using _27_FrontToBackSqlConnection.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.General;
+
 
 namespace _27_FrontToBackSqlConnection.Data
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext <AppUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+
 
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<Product> Products { get; set; }
